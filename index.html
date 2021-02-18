@@ -5,15 +5,13 @@
 </head>
 <body>
 <iframe id="element" src="https://app.lapentor.com/sphere/61-michigan-ave" frameborder="0" width="100%" height="700px" scrolling="no" allow="vr,gyroscope,accelerometer" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true"></iframe>
-
+<a href="javascript:fullscreen()">Full Screen</a>
 </body>
 <script>
-window.addEventListener('DOMContentLoaded', (event) => {
- setTimeout(function(){ 
+ function fullscreen(){ 
   var elem = document.getElementById("element");
   elem.requestFullscreen(); 
-  }, 3000);
-});
+  } 
 
 </script>
 
